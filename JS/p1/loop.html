@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Loop</title>
+</head>
+
+<body>
+   <button type="button" onclick="myFunction()">Click and Print Number</button>
+   <button type="button" onclick="my2Function()">Click!</button>
+   <button type="button" onclick="my3Function()">Click!</button>
+   
+</body>
+ 
+<script>
+
+   // For Loop
+
+   function myFunction() {
+      for (let i = 0; i < 10; i++) {
+         document.write(i + 1);
+      }
+   }
+
+   // For IN Loop
+
+   function my2Function(){
+      let obj = {
+         per1: 59,
+         per2: 45,
+         per3: 78,
+         per4: 84,
+         per5: 92,
+      }
+
+      for (let a in obj){
+        console.log(a + "Marks is" + obj[a])
+      }
+
+   }
+
+   // For OF Loop
+
+function my3Function(){
+   let sum = 0;
+   let n = prompt("Enter the value of n")
+   n = Number.parseInt(n);
+   for (let i = 0; i < n; i++){
+      sum += (i)
+      console.log((i), "+")
+   }
+   document.write("Sum Of" + n + "is" + sum)
+}
+
+</script>
+
+</html>

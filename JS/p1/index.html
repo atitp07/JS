@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marks Program</title>
+</head>
+
+<body>
+
+    <h1>if else statements    </h1>
+
+    <button onclick="myFunction()">Try it</button>
+</body>
+
+<!------------------- if else statements ------------------->
+<script>
+    function myFunction() {
+        let a = parseInt(prompt("Hey whats your age?", ""));
+
+        if (a == "" || isNaN(a)) {
+
+            alert("Value is blank!!! OR Only number!!!")
+        }
+
+        else {
+            if (parseInt(a) < 0) {
+                alert("This is an invalid age!!!");
+            } 
+
+            else if (a <= 17) {
+                alert("You can drive after 18.");
+            } 
+
+            else {
+                alert("You can drive now.");
+            }   
+        }
+    }
+</script>
+
+</html>

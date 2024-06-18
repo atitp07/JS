@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pyramid</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+
+    // First 
+
+    for(let i = 1; i <= 9; i++){
+        for(let j = 1; j <=i; j++){
+            document.write(i + " ");
+        }
+        document.write("<br>");
+    }
+
+    // Second 
+
+    document.write("<br>");
+
+    for(let i = 1; i <= 9; i++){
+        for(let j = 1; j <=i; j++){
+            document.write(j + " ");
+        }
+        document.write("<br>");
+    }
+
+    // Third 
+
+    document.write("<br>");
+
+    let count = 1;
+    for(let i = 1; i <= 4; i++){
+        for(let j = 1; j <=i; j++){
+            document.write(count + " ");
+            count++;
+        }
+        document.write("<br>");
+    }
+
+    // fourth 
+
+    document.write("<br>");
+
+    for(let i = 1; i <= 9; i++){
+        for(let j = 9; j >=i; j--){
+            document.write("&nbsp;");
+            
+        }
+        
+        for(let k = 1; k <= i; k++){
+            document.write(i + " ");
+        }
+        document.write("<br>");
+    }
+
+    // fifth
+
+    document.write("<br>");
+
+    for(let i = 1; i <= 9; i++){
+        for(let j = 9; j >=i; j--){
+            document.write("&nbsp;");
+            
+        }
+        
+        for(let k = 1; k <= i; k++){
+            document.write(k + " ");
+        }
+        document.write("<br>");
+    }
+
+    // sixth
+
+    document.write("<br>");
+
+    let cunt = 1;
+    for(let i = 1; i <= 4; i++){
+        for(let j = 4; j >=i; j--){
+            document.write("&nbsp;");
+            
+        }
+        
+        for(let k = 1; k <= i; k++){
+            document.write(cunt + " ");
+            cunt++;
+        }
+        document.write("<br>");
+    }
+
+    // Star Pattern
+
+    document.write("<br>");
+
+    for(let i = 1; i <= 9; i++){
+        for(let j = 1; j <=i; j++){
+            document.write( "*" + " ");
+        }
+        document.write("<br>");
+    }
+
+
+</script>
+
+</html>

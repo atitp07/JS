@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function myFunction() {
+            let shop;
+            switch (document.getElementById('sp').value.toLowerCase()) {
+                case 'a':
+                    shop = 'Amazon';
+                    break;
+    
+                case 'f':
+                    shop = 'Flipcart';
+                    break;
+    
+                case 'm':
+                    shop = 'Myntra';
+                    break;
+    
+                default:
+                    shop = 'Custom Print';
+            }
+            document.getElementById('cas').innerHTML = shop;
+        }
+    </script>
+    </head>
+
+<body>
+    <h1 id="cas"></h1>
+    <input type="text" id="sp">
+    <button type="button" onclick="myFunction()">Click Here!</button>
+</body>
+
+</html>

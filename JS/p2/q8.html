@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function myfunction() {
+            let maths = parseFloat(document.getElementById('maths').value || 0);
+            let science = parseFloat(document.getElementById('science').value || 0);
+            let gujarati = parseFloat(document.getElementById('guj').value || 0);
+            let english = parseFloat(document.getElementById('eng').value || 0);
+            let socialscience = parseFloat(document.getElementById('ss').value || 0);
+
+
+            let totalmarks = maths + science + gujarati + english + socialscience;
+            let maxmarks = 500;
+            let percentage = parseFloat((totalmarks / maxmarks) * 100);
+
+            document.getElementById('totalmarks').value = totalmarks.toFixed(2);
+            document.getElementById('percentage').value = percentage.toFixed(2);
+
+            if (percentage < 40) {
+                document.getElementById('grade').value = "Fail"
+            }
+
+            else if (percentage >= 40 && percentage < 50) {
+                document.getElementById('grade').value = "3rd class"
+            }
+
+            else if (percentage >= 50 && percentage < 60) {
+                document.getElementById('grade').value = "2nd class"
+            }
+
+            else if (percentage >= 60 && percentage < 70) {
+                document.getElementById('grade').value = "1st class"
+            }
+
+            else {
+                document.getElementById('grade').value = "Distiction"
+            }
+        }
+    </script>       
+
+</head>
+
+<body>
+    Maths: <input type="text" id="maths"><br><br>
+    Science: <input type="text" id="science"><br><br>
+    Gujarati: <input type="text" id="guj"><br><br>
+    English: <input type="text" id="eng"><br><br>
+    Social Science: <input type="text" id="ss"><br><br>
+    <button type="button" onclick="myfunction()">Click to show Result</button><br><br>
+    <h2>Result</h2><br>
+    Total Marks: <input type="text" id="totalmarks" disabled="disabled"><br><br>
+    Percentage(%): <input type="text" id="percentage" disabled="disabled">
+    Grade: <input type="text" id="grade" disabled="disabled">
+</body>
+
+</html>     

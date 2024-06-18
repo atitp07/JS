@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h4 id="lenght1"></h4>
+    <h4 id="lenght2"></h4>
+    <h3>Array in join() method</h3>
+    <p id="array"></p>
+
+    <h3>Array in pop() method</h3>
+    <p id="array1"></p>
+    <p id="array2"></p>
+
+    <h3>Array in push() method</h3>
+    <p id="array3"></p>
+
+    <h3>Array in shift() method</h3>
+    <p id="array4"></p>
+    <p id="array5"></p>
+
+    <h3>Array in unshift() method</h3>
+    <p id="array6"></p>
+    <p id="array7"></p>
+
+    <h3>Array in delete() method</h3>
+    <p id="array8"></p>
+
+    <h3>Array in concat() method</h3>
+    <p id="array9"></p>
+
+    <h3>Array in sort() method</h3>
+    <p id="array10"></p>
+
+    <h3>Array in splice() method</h3>
+    <p id="array11"></p>
+    <p id="array12"></p>
+    <p id="array13"></p>
+
+    <h3>Array in slice() method</h3>
+    <p id="array14"></p>
+
+</body>
+<script>
+
+    let num = [1, 2, 3, 4, 5]
+    let num2 = [11, 12, 13, 14, 15]
+    let num3 = [111, 112, 113, 114, 115]
+    document.getElementById('lenght1').innerHTML = num;
+    document.getElementById('lenght2').innerHTML = num.length;
+
+    // join()
+    let a = num.join(" and ");
+
+    // join (2)
+    console.log(num.join());
+    num.splice(3, 0, "and");
+    console.log(num.join());
+
+    // let y =num[4]
+    // let x = num.pop()
+     
+    // let z = num + ( " and " ) + x
+     
+    // console.log(z)
+
+    // pop()
+    let b = num.pop()
+
+    // push()
+    let c = num.push(6)
+
+    // shift & unshift
+    let d = num.shift()
+    let e = num.unshift(1)
+
+    // delete()
+    delete num[0]
+
+    // concat()
+    let newNum = num.concat(num2, num3)
+    document.getElementById('array').innerHTML = a;
+    document.getElementById('array1').innerHTML = num;
+    document.getElementById('array2').innerHTML = b;
+    document.getElementById('array3').innerHTML = num, c;
+    document.getElementById('array4').innerHTML = num;
+    document.getElementById('array5').innerHTML = d;
+    document.getElementById('array6').innerHTML = num;
+    document.getElementById('array7').innerHTML = e;
+    document.getElementById('array8').innerHTML = num;
+    document.getElementById('array9').innerHTML = newNum;
+
+    // sort()
+    let compare = (a, b)=>{
+        return a - b
+    }
+    let num4 = [1, 542, 8, 2, 3, 45, 78, 65, 93]
+    num4.sort(compare)
+    document.getElementById('array10').innerHTML = num4;
+
+    // splice
+
+    let no = [101, 102, 103, 104, 105, 106, 107, 108, 109]
+    no.splice(9, 0, 110, 111, 112, 113, 114, 115)
+    document.getElementById('array11').innerHTML = no;
+
+    let deletedValues = no.splice(0, 2, 98, 99 )
+    document.getElementById('array12').innerHTML = no;
+    document.getElementById('array13').innerHTML = deletedValues + "  " + " : (deletedValues) ";
+
+    // slice
+
+    let newno = no.slice(0, 5)
+    document.getElementById('array14').innerHTML = newno;
+
+</script>
+
+</html>

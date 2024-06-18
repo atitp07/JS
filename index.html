@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Javascript</title>
+
+    <script>
+        function myFunction(){
+            document.getElementById('para').innerHTML = 'Javascript is the powerful language.'
+        }
+
+        function onFunction(){
+            document.getElementById('img').src='On.png'
+        }
+
+        function offFunction(){
+            document.getElementById('img').src='Off.png'   
+        }
+
+        function getFunction(){
+            document.write(11 + 11);
+
+        }
+
+        {
+            document.write('Hello Everyone!');
+        }
+
+        function alertFunction(){
+            window.alert(22 * 22);
+        }
+
+        {
+            console.log(10 + 20);
+        }
+
+        function printFunction(){
+            window.print();
+        }
+    </script>
+
+    
+
+</head>
+<body>
+    <h1>Hello! Everyone </h1>
+
+    <!-- Using innerHTML -->
+
+    <p id="para">Click the button and see the paragraph</p>
+
+    <button type="button" onclick="myFunction()">Click Here</button><br>
+
+    <!-- Light Turn on off -->
+
+    <button type="button" onclick="onFunction()">Turn On</button>
+    <img id="img" src="Off.png" style="width: 250px;">
+    <button type="button" onclick="offFunction()">Turn Off</button><br><br>
+
+    <!-- Using innerHTML -->
+    <!-- Using document.write -->
+    
+    <h2>get Output</h2>
+    <button type="button" onclick="getFunction()">Click!</button><br><br>
+
+    <!-- Using alert -->
+    <h2>Click & Show the alert box</h2>
+    <button type="button" onclick="alertFunction()">Click Here!</button>
+
+    <!-- Statements -->
+
+    <h3 id="gets"></h3>
+    <script>
+        let a, b, c;
+        a=10;
+        b=10;
+        c=a+b;
+        document.getElementById("gets").innerHTML = c;
+    </script>
+
+    <!-- Page Print -->
+
+    <h2>Page Print</h2>
+    <button onclick="printFunction()">Print</button>
+
+    <!-- date time print -->
+
+    
+
+</body>
+</html>

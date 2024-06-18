@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+
+<script>
+
+    // First Triangle
+
+    for (let i = 1; i <= 5; i++) {
+        for (let j = 5; j >= i; j--) {
+            document.write("&nbsp;" + " ");
+
+        }
+
+        for (let k = 1; k <= i; k++) {
+            document.write(i + " ");
+        }
+
+        for (let l = i - 1; l >= 1; l--) {
+            document.write(l + " ");
+        }
+        document.write("<br>");
+    }
+
+    document.write("<br>")
+
+    // Second Triangle
+
+    for (let i = 1; i <= 5; i++) {
+        for (let j = 5; j > i; j--) {
+            document.write("&nbsp;" + " ");
+
+        }
+
+        for (let k = 1; k <= i; k++) {
+            document.write(k + " ");
+        }
+
+        for (let l = i - 1; l >= 1; l--) {
+            document.write(l + " ");
+        }
+        document.write("<br>");
+    }
+
+    document.write("<br>");
+
+    // Third Triangle
+
+    for (let i = 1; i <= 5; i++) {
+        
+        for (let j = 5; j > i; j--) {
+            document.write("&nbsp;" + " ");
+        }
+
+        for (let k = i ; k >= 1; k--) {
+            document.write(k);
+        }
+
+        for (let l = 2; l <= i; l++) {
+            document.write(l);
+        }
+
+        document.write("<br>");
+    }
+
+    document.write("<br>");
+
+    // Fourth Triangle
+
+    for (let i = 1; i <= 5; i++) {
+    
+    for (let j = 5; j > i; j--) {
+        document.write("&nbsp;&nbsp;");
+    }
+
+    
+    for (let k = 1; k < i; k++) {
+        document.write(i);
+    }
+
+    document.write("1");
+
+    for (let l = i - 1; l >= i; l--) {
+        document.write(l);
+    }
+
+    document.write("<br>");
+}
+
+
+
+        1
+       212
+      33133
+     4441444
+    5555155555
+
+</script>
+
+</html>

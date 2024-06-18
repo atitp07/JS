@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>q1</title>
+</head>
+
+<body>
+    <button type="button" onclick="get">Click To Show your Marks</button>
+</body>
+<script>
+    let marks = {
+        p1: 90,
+        p2: 9,
+        p3: 56,
+        p4: 4
+    }
+
+    for (let i = 0; i < Object.keys(marks).length; i++) {
+        console.log(" The marks of " + Object.keys(marks)[i] + " are " + marks[Object.keys(marks)[i]])
+    }
+</script>
+
+</html>
