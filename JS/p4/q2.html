@@ -31,25 +31,25 @@
             return;
         }
 
-        // let notes = [500, 200, 100, 50, 20, 10, 5, 2, 1];
-        // let noteCount = new Array(notes.length).fill(0);
+        let notes = [500, 200, 100, 50, 20, 10, 5, 2, 1];
+        let noteCount = new Array(notes.length).fill(0);
 
-        // for (let i = 0; i < notes.length; i++) {
-        //     if (amount >= notes[i]) {
-        //         noteCount[i] = Math.floor(amount / notes[i]);
-        //         amount = amount - noteCount[i] * notes[i];
-        //     }
-        // }
+        for (let i = 0; i < notes.length; i++) {
+            if (amount >= notes[i]) {
+                noteCount[i] = Math.floor(amount / notes[i]);
+                amount = amount - noteCount[i] * notes[i];
+            }
+        }
 
-        // document.getElementById('fivehundred').value = noteCount[0];
-        // document.getElementById('twohundred').value = noteCount[1];
-        // document.getElementById('onehundred').value = noteCount[2];
-        // document.getElementById('fifty').value = noteCount[3];
-        // document.getElementById('twenty').value = noteCount[4];
-        // document.getElementById('ten').value = noteCount[5];
-        // document.getElementById('five').value = noteCount[6];
-        // document.getElementById('two').value = noteCount[7];
-        // document.getElementById('one').value = noteCount[8];
+        document.getElementById('fivehundred').value = noteCount[0];
+        document.getElementById('twohundred').value = noteCount[1];
+        document.getElementById('onehundred').value = noteCount[2];
+        document.getElementById('fifty').value = noteCount[3];
+        document.getElementById('twenty').value = noteCount[4];
+        document.getElementById('ten').value = noteCount[5];
+        document.getElementById('five').value = noteCount[6];
+        document.getElementById('two').value = noteCount[7];
+        document.getElementById('one').value = noteCount[8];
     }
 
 </script>
